@@ -3,9 +3,10 @@
 const searchBook = () => {
 
     const searchBook = document.getElementById('search-field').value;
-    document.getElementById('search-field').value = '';
 
     loadBook(searchBook);
+    document.getElementById('search-field').value = '';
+
 }
 
 const loadBook = searchBook => {

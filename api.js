@@ -10,7 +10,7 @@ const searchBook = () => {
 }
 
 const loadBook = searchBook => {
-    const url = `http://openlibrary.org/search.json?q=${searchBook}`;
+    const url = `https://openlibrary.org/search.json?q=${searchBook}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayBook(data.numFound, data.docs));
